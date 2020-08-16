@@ -10,11 +10,12 @@
 		578BD66224E90ED5005AE19B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD66124E90ED5005AE19B /* AppDelegate.swift */; };
 		578BD66424E90ED5005AE19B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD66324E90ED5005AE19B /* SceneDelegate.swift */; };
 		578BD66624E90ED5005AE19B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD66524E90ED5005AE19B /* ViewController.swift */; };
-		578BD66924E90ED5005AE19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BD66724E90ED5005AE19B /* Main.storyboard */; };
 		578BD66B24E90EE0005AE19B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578BD66A24E90EE0005AE19B /* Assets.xcassets */; };
 		578BD66E24E90EE0005AE19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BD66C24E90EE0005AE19B /* LaunchScreen.storyboard */; };
 		578BD67924E90EE1005AE19B /* status_bar_bugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD67824E90EE1005AE19B /* status_bar_bugTests.swift */; };
 		578BD68424E90EE1005AE19B /* status_bar_bugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD68324E90EE1005AE19B /* status_bar_bugUITests.swift */; };
+		578BD69224E91092005AE19B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD69124E91092005AE19B /* Extensions.swift */; };
+		578BD69424E910E8005AE19B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BD69324E910E8005AE19B /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		578BD66124E90ED5005AE19B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		578BD66324E90ED5005AE19B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		578BD66524E90ED5005AE19B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		578BD66824E90ED5005AE19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		578BD66A24E90EE0005AE19B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		578BD66D24E90EE0005AE19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		578BD66F24E90EE0005AE19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		578BD67F24E90EE1005AE19B /* status-bar-bugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "status-bar-bugUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578BD68324E90EE1005AE19B /* status_bar_bugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status_bar_bugUITests.swift; sourceTree = "<group>"; };
 		578BD68524E90EE1005AE19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578BD69124E91092005AE19B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		578BD69324E910E8005AE19B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,11 @@
 				578BD66124E90ED5005AE19B /* AppDelegate.swift */,
 				578BD66324E90ED5005AE19B /* SceneDelegate.swift */,
 				578BD66524E90ED5005AE19B /* ViewController.swift */,
-				578BD66724E90ED5005AE19B /* Main.storyboard */,
 				578BD66A24E90EE0005AE19B /* Assets.xcassets */,
 				578BD66C24E90EE0005AE19B /* LaunchScreen.storyboard */,
 				578BD66F24E90EE0005AE19B /* Info.plist */,
+				578BD69124E91092005AE19B /* Extensions.swift */,
+				578BD69324E910E8005AE19B /* CustomTabBarController.swift */,
 			);
 			path = "status-bar-bug";
 			sourceTree = "<group>";
@@ -234,7 +237,6 @@
 			files = (
 				578BD66E24E90EE0005AE19B /* LaunchScreen.storyboard in Resources */,
 				578BD66B24E90EE0005AE19B /* Assets.xcassets in Resources */,
-				578BD66924E90ED5005AE19B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +263,9 @@
 			files = (
 				578BD66624E90ED5005AE19B /* ViewController.swift in Sources */,
 				578BD66224E90ED5005AE19B /* AppDelegate.swift in Sources */,
+				578BD69424E910E8005AE19B /* CustomTabBarController.swift in Sources */,
 				578BD66424E90ED5005AE19B /* SceneDelegate.swift in Sources */,
+				578BD69224E91092005AE19B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		578BD66724E90ED5005AE19B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				578BD66824E90ED5005AE19B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		578BD66C24E90EE0005AE19B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77Z22JCT9H;
 				INFOPLIST_FILE = "status-bar-bug/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77Z22JCT9H;
 				INFOPLIST_FILE = "status-bar-bug/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
