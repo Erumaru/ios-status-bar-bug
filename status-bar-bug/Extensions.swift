@@ -17,6 +17,7 @@ extension UITabBarController {
 
 extension UINavigationController {
     override open var childForStatusBarStyle: UIViewController? {
+        print("I AM HERE!")
         return topViewController
     }
 }
